@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #1e3a8a; /* Dark blue */
+            color: white;
+            border-right: 1px solid #ccc;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 1fr auto auto auto;
+            align-items: center;
+            background-color: #2563eb; /* Blue */
+            color: white;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .projects, .announcements, .trending {
+            background-color: #f1f5f9; /* Light gray */
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .branding, .navigation, .search-bar, .user-info, .header-buttons {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="branding">
+                <img src="images/lambda.svg" alt="Logo">
+                <h1>Brand Name</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <img src="images/heart-half-full.svg" alt="User">
+                <span>Username</span>
+            </div>
+            <div class="header-buttons">
+                <button>Notifications</button>
+                <button>Logout</button>
+            </div>
+            <div class="lambda-icon">
+                <img src="images/lambda.svg" alt="Lambda Icon">
+            </div>
+            <div class="black-mesa-icon">
+                <img src="images/black-mesa.svg" alt="Black Mesa Icon">
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <img src="images/pistol.svg" alt="Project">
+                    <p>Project 1</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/controller.svg" alt="Project">
+                    <p>Project 2</p>
+                </div>
+            </section>
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <p>No new announcements</p>
+            </section>
+            <section class="trending">
+                <h2>Trending</h2>
+                <div class="trending-item">
+                    <img src="images/bird.svg" alt="Trending">
+                    <p>Trending Item 1</p>
+                </div>
+                <div class="trending-item">
+                    <img src="images/poll.svg" alt="Trending">
+                    <p>Trending Item 2</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
